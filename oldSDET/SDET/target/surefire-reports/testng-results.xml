@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="5" failed="0" total="5" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SDETTests.Test2" duration-ms="13039" started-at="2017-03-15T19:23:01Z" finished-at="2017-03-15T19:23:14Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="13039" started-at="2017-03-15T19:23:01Z" finished-at="2017-03-15T19:23:14Z">
+      <class name="SDETTests.Test2">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:SDETTests.Test2@ea6147e]" name="setUpClass" is-config="true" duration-ms="319" started-at="2017-03-15T14:23:01Z" finished-at="2017-03-15T14:23:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="setUpMethod()[pri:0, instance:SDETTests.Test2@ea6147e]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2017-03-15T14:23:02Z" finished-at="2017-03-15T14:23:02Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: u3097-6 (tried for 10 second(s) with 500 MILLISECONDS interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: u3097-6 (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at SDETTests.Test2.setUpMethod(Test2.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:552)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:109)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: u3097-6
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'
+System info: host: 'work', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-65-generic', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:899)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:898)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:184)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="SKIP" signature="footerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SDETTests.Test2@ea6147e]" name="footerTest" duration-ms="1" started-at="2017-03-15T14:23:14Z" data-provider="footerTest" finished-at="2017-03-15T14:23:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[u10570-4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.xpanxion.com/about.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ABOUT US]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[u3102-4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- footerTest -->
+        <test-method status="SKIP" signature="tearDownMethod()[pri:0, instance:SDETTests.Test2@ea6147e]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2017-03-15T14:23:14Z" finished-at="2017-03-15T14:23:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="SKIP" signature="footerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SDETTests.Test2@ea6147e]" name="footerTest" duration-ms="0" started-at="2017-03-15T14:23:14Z" data-provider="footerTest" finished-at="2017-03-15T14:23:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[u10578-4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.xpanxion.com/about.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ABOUT US]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[u3102-4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- footerTest -->
+        <test-method status="SKIP" signature="tearDownMethod()[pri:0, instance:SDETTests.Test2@ea6147e]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2017-03-15T14:23:14Z" finished-at="2017-03-15T14:23:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="SKIP" signature="setUpMethod()[pri:0, instance:SDETTests.Test2@ea6147e]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2017-03-15T14:23:14Z" finished-at="2017-03-15T14:23:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="SKIP" signature="setUpMethod()[pri:0, instance:SDETTests.Test2@ea6147e]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2017-03-15T14:23:14Z" finished-at="2017-03-15T14:23:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="SKIP" signature="tearDownMethod()[pri:0, instance:SDETTests.Test2@ea6147e]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2017-03-15T14:23:14Z" finished-at="2017-03-15T14:23:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="SKIP" signature="footerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SDETTests.Test2@ea6147e]" name="footerTest" duration-ms="0" started-at="2017-03-15T14:23:14Z" data-provider="footerTest" finished-at="2017-03-15T14:23:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[u10577-4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.xpanxion.com/locations.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[LOCATIONS]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[u8973-4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- footerTest -->
+        <test-method status="SKIP" signature="footerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SDETTests.Test2@ea6147e]" name="footerTest" duration-ms="0" started-at="2017-03-15T14:23:14Z" data-provider="footerTest" finished-at="2017-03-15T14:23:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[u10576-4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.xpanxion.com/mission.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[MISSION & VALUES]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[u3113-4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- footerTest -->
+        <test-method status="SKIP" signature="setUpMethod()[pri:0, instance:SDETTests.Test2@ea6147e]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2017-03-15T14:23:14Z" finished-at="2017-03-15T14:23:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="SKIP" signature="tearDownMethod()[pri:0, instance:SDETTests.Test2@ea6147e]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2017-03-15T14:23:14Z" finished-at="2017-03-15T14:23:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="SKIP" signature="setUpMethod()[pri:0, instance:SDETTests.Test2@ea6147e]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2017-03-15T14:23:14Z" finished-at="2017-03-15T14:23:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="SKIP" signature="footerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SDETTests.Test2@ea6147e]" name="footerTest" duration-ms="1" started-at="2017-03-15T14:23:14Z" data-provider="footerTest" finished-at="2017-03-15T14:23:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[u10575-4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.xpanxion.com/news.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[u9113]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- footerTest -->
+        <test-method status="SKIP" signature="tearDownMethod()[pri:0, instance:SDETTests.Test2@ea6147e]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2017-03-15T14:23:14Z" finished-at="2017-03-15T14:23:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="SKIP" signature="tearDownClass()[pri:0, instance:SDETTests.Test2@ea6147e]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2017-03-15T14:23:14Z" finished-at="2017-03-15T14:23:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- SDETTests.Test2 -->
+    </test> <!-- Command line test -->
+  </suite> <!-- SDETTests.Test2 -->
+</testng-results>
